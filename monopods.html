@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Моноподы для селфи</title>
+</head>
+<body>
+
+  <main class="container">
+    <h1 class="page-title">Моноподы для селфи</h1>
+
+    <ul class="breadcrumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href=""></a>Каталог товаров</li>
+      <li class="breadcrumbs__current">Моноподы для селфи</li>
+    </ul>
+
+    <section class="filters">
+      <h2 class="filters__title">Фильтр:</h2>
+      <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filters__section">
+          <legend class="filters__section-title">Стоимость</legend>
+          <div class="range">
+            <div class="range__base"></div>
+            <div class="range__handle"></div>
+            <div class="range__handle"></div>
+            <div class="range__fill"></div>
+          </div>
+        </fieldset>
+        <fieldset class="filters__section">
+          <legend class="filters__section-title">Цвет</legend>
+          <ul>
+            <li class="filters__option">
+              <label for="black">Чёрный</label>
+              <input class="filters__input filters__input--checkbox visually-hidden" id="black" type="checkbox" name="black" checked>
+            </li>
+            <li class="filters__option">
+              <label for="white">Белый</label>
+              <input class="filters__input filters__input--checkbox visually-hidden" id="white" type="checkbox" name="white">
+            </li>
+            <li class="filters__option">
+              <label for="blue">Синий</label>
+              <input class="filters__input filters__input--checkbox visually-hidden" id="blue" type="checkbox" name="blue" checked>
+            </li>
+            <li class="filters__option">
+              <label for="red">Красный</label>
+              <input class="filters__input filters__input--checkbox visually-hidden" id="red" type="checkbox" name="red" checked>
+            </li>
+            <li class="filters__option">
+              <label for="pink">Розовый</label>
+              <input class="filters__input filters__input--checkbox visually-hidden" id="pink" type="checkbox" name="pink">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filters__section">
+          <legend class="filters__section-title">Bluetooth</legend>
+          <ul>
+            <li class="filters__option">
+              <label for="bluetooth">Есть</label>
+              <input class="filters__input filters__input--radio visually-hidden" id="bluetooth" type="radio" name="product-group" value="bluetooth" checked>
+            </li>
+            <li class="filters__option">
+              <label for="no-bluetooth">Нет</label>
+              <input class="filters__input filters__input--radio visually-hidden" id="no-bluetooth" type="radio" name="product-group" value="no-bluetooth">
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filters__button button">Показать</button>
+      </form>
+    </section>
+
+    <section class="sorting">
+      <h2 class="sorting__title">Сортировка</h2>
+      <ul>
+        <li class="sorting__option sorting__option--current">
+          <a>По цене</a>
+        </li>
+        <li class="sorting__option">
+          <a href="#">По типу</a>
+        </li>
+        <li class="sorting__option">
+          <a href="#">По популярности</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="sorting__order">
+          <a class="sorting__button" href="#">По возрастанию</a>
+        </li>
+        <li class="sorting__order sorting__order--current">
+          <a class="sorting__button">По убыванию</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Список селфи-палок</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <h3 class="catalog__item-title">Любительская селфи-палка</h3>
+          <p class="catalog__item-image">
+            <a href="#">
+              <img src="img/" alt="Любительская селфи-палка" width="360" height="380">
+            </a>
+          </p>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__item-title">Профессиональная селфи-палка</h3>
+          <p class="catalog__item-image">
+            <a href="#"><img src="img/" alt="Профессиональная селфи-палка" width="360" height="380">
+            </a>
+          </p>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__item-title">Непотопляемая селфи-палка</h3>
+          <p class="catalog__item-image">
+            <a href="#">
+              <img src="img/" alt="Непотопляемая селфи-палка" width="360" height="380">
+            </a>
+          </p>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__item-title">Селфи-палка "Следуй за мной"</h3> <!--&laquo; &raquo;?-->
+          <p class="catalog__item-image">
+            <a href="#">
+              <img src="img/" alt="Селфи-палка Следуй за мной" width="360" height="380">
+            </a>
+          </p>
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item--current">
+            <a>1</a>
+          </li>
+        </ul>
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a href="#">2</a>
+          </li>
+        </ul>
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a href="#">3</a>
+          </li>
+        </ul>
+        <button class="button button--prev" type="button"></button>
+        <button class="button  button--next" type="button"></button>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

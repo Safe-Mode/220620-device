@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -6,6 +6,9 @@
   </head>
   <body>
     <header class="page-header">
+    <!-- это место для логотипа -->
+    <!-- <p class="logo logo--header"><a>Device</a></p> вот так его лучше разметить -->
+    <!--ПОЧЕМУ НЕ ВНЕСТИ В ОСНОВНУЮ НАВИГАЦИЮ? ЭТО БУДЕТ ЕДИНСТВЕННАЯ ССЫЛКА НА ГЛАВНУЮ-->
       <nav class="main-nav">
         <ul class="main-nav__user-nav">
           <li class="main-nav__user-item">
@@ -25,6 +28,7 @@
           </li>
         </ul>
         <ul class="main-nav__site-nav">
+        <!-- отсюда логотип убираем -->
           <li class="main-nav__item">
             <a>
               <p class="logo logo--header">
@@ -32,9 +36,13 @@
               </p>
             </a>
           </li>
+            Каталог товаров 
           <li class="main-nav__item">
-            Каталог товаров
+            <!-- Каталог товаров нужно во что-нибудь обернуть, в спан например -->
+            <!--Я ВООБЩЕ ДУМАЛ, ЧТО ЭТО ССЫЛКА, ПОТОМУ ЧТО НЕ ПЛОХО БЫ В СЛУЧАЕ ОТКЛЮЧЕННОГО JS ПЕРЕЙТИ НА СТРАНИЦУ С КАТАЛОГОМ, НО ВНУТРИ У НЕГО УЖЕ ЕСТЬ ССЫЛКИ, А МАКЕЕВ СКАЗАЛ, ТАК НЕЛЬЗЯ...ЛИБО С ПОМОЩЬЮ JS БУДЕТ ПРЯТАТЬСЯ, А ПО-УМОЛЧАНИЮ РАСКРЫТО, НЕ ЗНАЮ, КАК ЛУЧШЕ-->
             <ul class="catalog visibility-hidden">
+              <!-- тут лучше разбить еще на три списка - три столбца выпадающего меню. Так как такую разметку ты не спозиционируешь согласно макету -->
+              <!--А ЕСЛИ ОГРАНИЧИТЬ ВЫСОТУ РОДИТЕЛЯ ПУНКТЫ НЕ БУДУТ ПЕРЕНОСИТЬСЯ ДАЛЬШЕ ВПРАВО?-->
               <li class="catalog__item">
                 <a href="#">Виртуальная реальность</a>
               </li>
@@ -79,12 +87,22 @@
           <label for="preview-btn-3"></label>
         </div>
         <div class="slider__inner">
+        <!-- <div class="slider__inner"> или <div class="slider__content"> лишний. Выбери сам -->
+        <!--НО МЫ ЖЕ ДОЛЖНЫ ДВИГАТЬ КОНТЕНТ ВНУТРИ ИННЕРА-->
           <div class="slider__content">
             <section class="slider__item">
+            <!-- <p>01</p> пропустил -->
+            <!--А НЕЛЬЗЯ СДЕЛАТЬ ИХ ПСЕВДОЭЛЕМЕНТАМИ BEFORE И AFTER К ЗАГОЛОВКУ?-->
               <h2 class="slider__item-title">Делай селфи, как Бен Стиллер</h2>
+              <!-- Делай селфи,<br> - перенос строки -->
               <p class="slider__item-pic">
                 <img src="img/" width="384" height="486" alt="Monopod">
               </p>
+              <!-- <p class="slider__item-pic">
+                <img src="img/" width="384" height="486" alt="Monopod">
+              </p>
+              нужно поставить первым в секции слайда, а весь остальной контент обернуть в див-->
+              <!--Я ТАК ПОНЯЛ, ТЫ ПРОСТО ПРЕДЛАГАЕШЬ ПО-ДРУГОМУ ПРИНЦИПУ ПЕРЕМЕЩАТЬ СЛАЙДЫ?-->
               <p class="slider__item-desc">
                 Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -102,6 +120,10 @@
                 </tr>
               </table>
             </section>
+
+            <!-- остальные слайды не проверяю - их по аналогии -->
+
+
             <section class="slider__item">
               <h2 class="slider__item-title">Худеем правильно</h2>
               <p class="slider__item-pic">
@@ -174,6 +196,23 @@
       <section class="brands">
         <h2 class="visually-hidden">Наши брэнды</h2>
         <ul class="brands__list">
+
+
+                <!-- нам нужно при наведении менять цвет логотипа. Так как логотипы партнеров это контентные изображения и должны присутствовать в разметке, , то на бекграунд ставить их нельзя. Значит будем извращаться-->
+                <!-- разметка одной li: -->
+                <!-- <li>
+                        <a href="#">
+                          <p class="brands__item brands__item--hover">
+                            <img src="http://placehold.it/260x100" alt="dji logo" class="brand-logo"> \\\ это цветное лого, которое будет проявляться при наведении на ссылку \\\
+                          </p>
+                          <p class="brands__item">
+                            <img src="http://placehold.it/260x100" alt="dji logo" class="brand-logo">
+                          </p>
+                        </a>
+                      </li> -->
+                      <!-- Пример плавного проявления я кидал в общак -->
+
+
           <li class="brands__item">
             <img src="img/" width="260" height="100" alt="dji">
           </li>
@@ -201,7 +240,7 @@
         </ul>
         <a class="about-us__all" href="#">Подробнее о нас</a>
       </section>
-
+<!-- <section class="about-us"> и <section class="contacts"> нужно обернуть в див -->
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <p class="contacts__desc">Вы можете забрать товар сами, заехав в наш офис.
@@ -214,11 +253,15 @@
     </main>
 
     <footer class="page-footer">
+    <!-- футер нужно размечать построчно. Первая строка  это логотип, войти, сравнить, корзина. Эту строку можно сделать списком.
+    Вторая строка - адресс, доставка, гарантия, контакты, телефон. Также можно сделать списком.
+    третья строка - соцсети и ссылка на академию -->
       <nav class="main-nav">
         <ul class="main-nav__site-nav">
           <li class="main-nav__item">
             <a>
               <p class="logo logo--footer">Device</p>
+              <!-- в логотипе можно обойтись без p -->
             </a>
           </li>
           <li class="main-nav__item">
@@ -268,12 +311,14 @@
         <textarea class="modal__form-message" placeholder="В свободной форме"></textarea>
         <button class="modal__form-submit" type="submit">Отправить</button>
         <button class="modal-close" type="button">x</button>
+        <!-- <button class="modal-close" type="button">x</button> Вместо х лучше написать Закрыть. И лучше эту кнопку вынести из состава формы. Так как она относится не к форме, а к модальному окну.  -->
       </form>
     </section>
 
     <section class="modal modal--map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <button class="modal-close" type="button">x</button>
+      <!-- с кнопкой то же самое -->
     </section>
   </body>
 </html>
