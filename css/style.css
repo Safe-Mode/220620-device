@@ -1,0 +1,23 @@
+body {
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+h1 {
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+}
+
+h2 {
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+}
