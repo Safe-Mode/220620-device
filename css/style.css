@@ -115,7 +115,6 @@ body {
 }
 
 .button--search {
-	color: #000000;
 	font-size: 15px;
 	line-height: 36px;
 	font-family: "Open Sans", "Arial", sans-serif;
@@ -162,6 +161,7 @@ body {
 .logo a,
 .main-nav__user-nav a,
 .main-nav__site-nav a,
+.breadcrumbs a,
 .goods__item a,
 .page-footer a {
 	font: inherit;
@@ -256,6 +256,32 @@ body {
 	letter-spacing: 0.1px;
 
 	list-style: none;
+}
+
+.page-title {
+	color: #000000;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 47px;
+	font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs__link {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs__link:hover a[href],
+.breadcrumbs__link:focus a[href],
+.breadcrumbs__link:active a[href] {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs__link:active a[href] {
+	color: rgba(0, 0, 0, 0.1);
 }
 
 .slider__item-title {
@@ -427,4 +453,8 @@ body {
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: normal;
 	letter-spacing: 0;
+}
+
+.main-nav__user-item a.logout {
+	color: rgba(0, 0, 0, 0.3);
 }

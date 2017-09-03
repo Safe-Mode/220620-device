@@ -14,14 +14,14 @@
       </p>
       <ul class="main-nav__user-nav">
         <li class="main-nav__user-item">
-          <form action="get">
+          <form action="https://echo.htmlacademy.ru" method="get">
             <input type="search" placeholder="Поиск по сайту">
-            <button class="button" type="submit">Найти</button>
+            <button class="button button--search" type="submit">Найти</button>
           </form>
         </li>
         <li class="main-nav__user-item">
           <a href="#">Валентин Петухов</a>
-          <a href="#">Выйти</a>
+          <a class="logout" href="#">Выйти</a>
         </li>
         <li class="main-nav__user-item">
           <a href="#">Сравнить</a>
@@ -32,7 +32,7 @@
       </ul>
       <ul class="main-nav__site-nav">
         <li class="main-nav__item">
-          <span>Каталог товаров</span>
+          <a>Каталог товаров</a>
           <ul class="main-nav__catalog">
             <li class="main-nav__catalog-item">
               <a href="#">Виртуальная реальность</a>
@@ -75,9 +75,9 @@
     <h1 class="page-title">Моноподы для селфи</h1>
 
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href=""></a>Каталог товаров</li>
-      <li class="breadcrumbs__current">Моноподы для селфи</li>
+      <li class="breadcrumbs__link"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__link"><a href="#">Каталог товаров</a></li>
+      <li class="breadcrumbs__link breadcrumbs__link--current">Моноподы для селфи</li>
     </ul>
 
     <section class="filters">
