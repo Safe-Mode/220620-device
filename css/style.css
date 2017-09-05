@@ -12,7 +12,7 @@
 	src: local("Open Sans"), local("OpenSans"),
 		url("../fonts/opensans.woff2") format("woff2"),
 		url("../fonts/opensans.woff") format("woff");
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -620,7 +620,7 @@ body {
 	color: rgba(0, 0, 0, 0.3);
 	font-size: 14px;
 	line-height: 18px;
-	font-weight: normal;
+	font-weight: 400;
 	letter-spacing: 0;
 }
 
@@ -921,7 +921,7 @@ body {
 	font-size: 14px;
 	line-height: 18px;
 	font-family: "Open Sans", "Arial", sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 	letter-spacing: 0;
 }
 
