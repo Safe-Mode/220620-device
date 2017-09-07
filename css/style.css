@@ -174,6 +174,10 @@ body {
 	background-color: #f7e296;
 }
 
+.inner-page .page-header {
+  min-height: 185px;
+}
+
 .logo {
 	margin: 0;
 
@@ -304,7 +308,7 @@ body {
 .main-nav__item {
   position: relative;
 
-	margin-right: 40px;
+	margin-right: 35px;
 
 	letter-spacing: 0.2em;
 }
@@ -361,6 +365,10 @@ body {
 	list-style: none;
 }
 
+.main-nav__catalog-wrapper {
+
+}
+
 .page-title {
 	padding: 0;
 	margin: 0;
@@ -377,13 +385,13 @@ body {
 	display: flex;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 43px;
 
 	list-style: none;
 }
 
 .breadcrumbs__link {
-	margin-right: 40px;
+	margin-right: 32px;
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -724,11 +732,12 @@ body {
 }
 
 .filters__title {
+  padding: 26px 0;
 	padding-left: 9999px;
 	margin: 0;
 	margin-left: -9999px;
 	margin-right: -70px;
-	margin-bottom: 70px;
+	margin-bottom: 71px;
 
 	color: #000000;
 	font-size: 16px;
@@ -753,22 +762,49 @@ body {
 }
 
 .filters__section-title {
+  padding: 12px 0;
+  padding-bottom: 25px;
+
 	color: #000000;
 	font-size: 18px;
 	line-height: 18px;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
+
+  border-top: 2px solid #000000;
 }
 
 .filters__options {
 	padding: 0;
+  padding-bottom: 28px;
 	margin: 0;
 
 	list-style: none;
 }
 
+.filters__option {
+  padding-left: 38px;
+}
+
+.filters__option label {
+  cursor: pointer;
+}
+
+.filters__range {
+  height: 83px;
+}
+
 .catalog-wrapper {
-	width: calc(100vw - 330px); /*ширина вьюпорта - цирина фильтров*/
+	width: calc(100vw - 330px); /*ширина вьюпорта - ширина фильтров*/
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__item-image {
+  order: -1;
 }
 
 .sorting {
@@ -781,8 +817,9 @@ body {
 }
 
 .sorting__title {
+  padding: 26px 0;
 	margin: 0;
-	margin-right: 55px;
+	margin-right: 60px;
 
 	color: #000000;
 	font-size: 16px;
@@ -838,6 +875,7 @@ body {
 .catalog {
 	padding: 70px;
 	padding-right: 0;
+  padding-bottom: 75px;
 }
 
 .catalog__list {
@@ -854,9 +892,13 @@ body {
 	margin-right: 40px;
 }
 
+.catalog__item .columns {
+  align-items: baseline;
+}
+
 .catalog__item:nth-child(2n) {
 	margin-right: 0;
-	margin-bottom: 50px;
+	margin-bottom: 55px;
 }
 
 .catalog__item:last-child {
@@ -864,14 +906,22 @@ body {
 }
 
 .catalog__item-title {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 260px;
+
 	color: #000000;
 	font-size: 18px;
-	line-height: 18px;
+	line-height: 19px;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 }
 
 .catalog__item-price {
+  width: 100px;
+
+  text-align: right;
 	color: #464646;
 	font-size: 16px;
 	line-height: 16px;
@@ -881,11 +931,16 @@ body {
 
 .catalog__item-image {
 	position: relative;
+
+  margin-bottom: 35px;
+  width: 360px;
+  height: 380px;
+
 	cursor: pointer;
 }
 
 .catalog__item-image:hover .catalog__item-overlay {
-	display: block;
+	display: flex;
 }
 
 .catalog__item-overlay {
@@ -893,13 +948,20 @@ body {
 	top: 0;
 	left: 0;
 
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 	display: none;
+  margin: 0;
 	width: 360px;
 	height: 380px;
 	background-color: rgba(238, 238, 238, 0.7);
 }
 
 .catalog__item .button {
+  margin-top: 35px;
+  margin-bottom: 5px;
+
 	color: #000000;
 	font-size: 18px;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -925,6 +987,9 @@ body {
 }
 
 .pagination {
+  position: relative;
+
+  display: flex;
 	align-items: center;
 
 	background-color: #ebebeb;
@@ -932,10 +997,10 @@ body {
 
 .pagination__list {
 	display: flex;
-	justify-content: center;
-	width: 360px;
-	margin: 0;
-	padding: 0;
+	justify-content: space-around;
+  min-width: 115px;
+	margin: auto;
+	padding: 20px 0;
 
 	list-style: none;
 }
@@ -944,6 +1009,7 @@ body {
 	color: rgba(0, 0, 0, 0.3);
 	font-size: 16px;
 	line-height: 16px;
+  vertical-align: middle;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	text-decoration: none;
@@ -965,7 +1031,10 @@ body {
 
 .button--prev,
 .button--next {
-  padding: 15px 30px;
+  position: absolute;
+
+  padding: 27px 30px;
+  height: 100%;
 
 	color: #000000;
 	font-size: 16px;
@@ -975,6 +1044,14 @@ body {
 	letter-spacing: 0.2em;
 
   background-color: transparent;
+}
+
+.button--prev {
+  left: 0;
+}
+
+.button--next {
+  right: 0;
 }
 
 .button--prev:hover,
@@ -999,9 +1076,14 @@ body {
 	background-color: #464646;
 }
 
+.inner-page .page-footer {
+  margin-top: 0;
+}
+
 .page-footer .container {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .page-footer .columns {

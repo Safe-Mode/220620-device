@@ -10,13 +10,13 @@
   <header class="page-header container">
     <nav class="main-nav">
       <p class="logo logo--header">
-        <a>Device</a>
+        <a href="index.html">Device</a>
       </p>
       <div class="columns">
         <ul class="main-nav__user-nav">
           <li class="main-nav__user-item">
             <form action="get">
-              <input type="search" placeholder="Поиск по сайту">
+              <input class="main-nav__search-input" type="search" placeholder="Поиск по сайту">
               <button class="button button--search" type="submit">Найти</button>
             </form>
           </li>
@@ -38,13 +38,13 @@
         <ul class="main-nav__site-nav">
           <li class="main-nav__item">
             <a>Каталог товаров</a>
-            <div class="columns">
+            <div class="columns main-nav__catalog-wrapper visually-hidden">
               <ul class="main-nav__catalog">
                 <li class="main-nav__catalog-item">
                   <a href="#">Виртуальная реальность</a>
                 </li>
                 <li class="main-nav__catalog-item">
-                  <a href="monopods.html">Моноподы для селфи</a>
+                  <a>Моноподы для селфи</a>
                 </li>
                 <li class="main-nav__catalog-item">
                   <a href="#">Экшн-камеры</a>
@@ -96,7 +96,7 @@
         <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filters__section">
             <legend class="filters__section-title">Стоимость</legend>
-            <div class="range">
+            <div class="filters__range range">
               <div class="range__base"></div>
               <div class="range__handle"></div>
               <div class="range__handle"></div>
@@ -169,8 +169,10 @@
           <h2 class="visually-hidden">Список селфи-палок</h2>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <h3 class="catalog__item-title"><a href="#">Любительская селфи-палка</a></h3>
-              <span class="catalog__item-price">500 руб.</span>
+              <div class="columns">
+                <h3 class="catalog__item-title"><a href="#">Любительская селфи-палка</a></h3>
+                <span class="catalog__item-price">500 руб.</span>
+              </div>
               <div class="catalog__item-image">
                 <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
                 <p class="catalog__item-overlay">
@@ -180,8 +182,10 @@
               </div>
             </li>
             <li class="catalog__item">
-              <h3 class="catalog__item-title"><a href="#">Профессиональная селфи-палка</a></h3>
-              <span class="catalog__item-price">1 500 руб.</span>
+              <div class="columns">
+                <h3 class="catalog__item-title"><a href="#">Профессиональная<br> селфи-палка</a></h3>
+                <span class="catalog__item-price">1 500 руб.</span>
+              </div>
               <div class="catalog__item-image">
                 <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                 <p class="catalog__item-overlay">
@@ -191,8 +195,10 @@
               </div>
             </li>
             <li class="catalog__item">
-              <h3 class="catalog__item-title"><a href="#">Непотопляемая селфи-палка</a></h3>
-              <span class="catalog__item-price">2 500 руб.</span>
+              <div class="columns">
+                <h3 class="catalog__item-title"><a href="#">Непотопляемая селфи-палка</a></h3>
+                <span class="catalog__item-price">2 500 руб.</span>
+              </div>
               <div class="catalog__item-image">
                 <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
                 <p class="catalog__item-overlay">
@@ -202,8 +208,10 @@
               </div>
             </li>
             <li class="catalog__item">
-              <h3 class="catalog__item-title"><a href="#">Селфи-палка "Следуй за мной"</a></h3>
-              <span class="catalog__item-price">4 900 руб.</span>
+              <div class="columns">
+                <h3 class="catalog__item-title"><a href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a></h3>
+                <span class="catalog__item-price">4 900 руб.</span>
+              </div>
               <div class="catalog__item-image">
                 <img src="img/item-4.jpg" alt="Селфи-палка Следуй за мной" width="360" height="380">
                 <p class="catalog__item-overlay">
@@ -214,8 +222,8 @@
             </li>
           </ul>
 
-          <div class="pagination columns">
-            <button class="button button--prev" type="button">Вперёд</button>
+          <div class="pagination">
+            <button class="button button--prev" type="button">Назад</button>
             <ul class="pagination__list">
               <li class="pagination__item pagination__item--current">
                 <a>1</a>
@@ -227,7 +235,7 @@
                 <a href="#">3</a>
               </li>
             </ul>
-            <button class="button  button--next" type="button">Назад</button>
+            <button class="button  button--next" type="button">Вперёд</button>
           </div>
         </section>
       </div>
@@ -238,11 +246,11 @@
     <div class="container">
       <nav class="main-nav main-nav--footer columns">
         <p class="logo logo--footer">
-          <a>Device</a>
+          <a href="index.html">Device</a>
         </p>
         <ul class="main-nav__user-nav main-nav__user-nav--footer">
           <li class="main-nav__user-item main-nav__user-item--footer main-nav__user-item--login">
-            <a href="#">Войти</a>
+            <a href="#">Выйти</a>
           </li>
           <li class="main-nav__user-item main-nav__user-item--footer">
             <a href="#">Сравнить</a>
