@@ -84,89 +84,85 @@
 
     <main class="container">
       <div class="preview slider">
-        <input type="radio" id="preview-btn-1" name="toggle" checked>
-        <input type="radio" id="preview-btn-2" name="toggle">
-        <input type="radio" id="preview-btn-3" name="toggle">
+        <input type="radio" id="preview-btn-1" name="preview-toggle" checked>
+        <input type="radio" id="preview-btn-2" name="preview-toggle">
+        <input type="radio" id="preview-btn-3" name="preview-toggle">
         <div class="slider__controls">
           <label for="preview-btn-1"></label>
           <label for="preview-btn-2"></label>
           <label for="preview-btn-3"></label>
         </div>
-        <div class="slider__inner">
-        <!-- <div class="slider__inner"> или <div class="slider__content"> лишний. Выбери сам -->
-        <!--НО МЫ ЖЕ ДОЛЖНЫ ДВИГАТЬ КОНТЕНТ ВНУТРИ ИННЕРА-->
-          <div class="slider__content">
-            <section class="slider__item columns">
-              <p class="slider__item-pic">
-                <img src="img/slider-1.png" width="384" height="486" alt="Monopod">
+        <div class="slider__content">
+          <section class="slider__item preview__item columns">
+            <p class="slider__item-pic">
+              <img src="img/slider-1.png" width="384" height="486" alt="Monopod">
+            </p>
+            <div class="slider__item-wrapper">
+              <h2 class="slider__item-title">Делай селфи,<br> как Бен Стиллер!</h2>
+              <p class="slider__item-desc">
+                Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p class="slider__item-button">
+                <a href="#" class="button button--yellow">Подробнее</a>
               </p>
-              <div class="slider__item-wrapper">
-                <h2 class="slider__item-title">Делай селфи,<br> как Бен Стиллер!</h2>
-                <p class="slider__item-desc">
-                  Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <p class="slider__item-button">
-                  <a href="#" class="button button--yellow">Подробнее</a>
-                </p>
-                <table class="slider__item-tech">
-                  <tr>
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr>
-                    <th>Длина палки</th>
-                    <th>Вес палки</th>
-                    <th>Материал</th>
-                  </tr>
-                </table>
-              </div>
-            </section>
+              <table class="slider__item-tech">
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+              </table>
+            </div>
+          </section>
 
-            <section class="slider__item columns">
-              <p class="slider__item-pic">
-                <img src="img/slider-2.png" width="345" height="485" alt="Smart band">
+          <section class="slider__item preview__item columns">
+            <p class="slider__item-pic">
+              <img src="img/slider-2.png" width="345" height="485" alt="Smart band">
+            </p>
+            <div class="slider__item-wrapper">
+              <h2 class="slider__item-title">Худеем правильно</h2>
+              <p class="slider__item-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <p class="slider__item-button">
+                <a href="#" class="button button--yellow">Подробнее</a>
               </p>
-              <div class="slider__item-wrapper">
-                <h2 class="slider__item-title">Худеем правильно</h2>
-                <p class="slider__item-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <p class="slider__item-button">
-                  <a href="#" class="button button--yellow">Подробнее</a>
-                </p>
-                <table class="slider__item-tech">
-                  <tr>
-                    <td>48 часов</td>
-                  </tr>
-                  <tr>
-                    <th>Без подзарядки</th>
-                  </tr>
-                </table>
-              </div>
-            </section>
+              <table class="slider__item-tech">
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+                <tr>
+                  <th>Без подзарядки</th>
+                </tr>
+              </table>
+            </div>
+          </section>
 
-            <section class="slider__item columns">
-              <p class="slider__item-pic">
-                <img src="img/slider-3.png" width="526" height="334" alt="Quadrocopter">
+          <section class="slider__item preview__item columns">
+            <p class="slider__item-pic">
+              <img src="img/slider-3.png" width="526" height="334" alt="Quadrocopter">
+            </p>
+            <div class="slider__item-wrapper">
+              <h2 class="slider__item-title">Порхает, как бабочка, жалит, как пчела!</h2>
+              <p class="slider__item-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <p class="slider__item-button">
+                <a href="#" class="button button--yellow">Подробнее</a>
               </p>
-              <div class="slider__item-wrapper">
-                <h2 class="slider__item-title">Порхает, как бабочка, жалит, как пчела!</h2>
-                <p class="slider__item-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <p class="slider__item-button">
-                  <a href="#" class="button button--yellow">Подробнее</a>
-                </p>
-                <table class="slider__item-tech">
-                  <tr>
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                  <tr>
-                    <th>Дальность полета</th>
-                    <th>Радиус поражения</th>
-                  </tr>
-                </table>
-              </div>
-            </section>
-          </div>
+              <table class="slider__item-tech">
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr>
+                  <th>Дальность полета</th>
+                  <th>Радиус поражения</th>
+                </tr>
+              </table>
+            </div>
+          </section>
         </div>
       </div>
 
@@ -190,7 +186,7 @@
                   <use xlink:href="img/icons.svg#popular-2"></use>
                 </svg>
               </p>
-              <h3 class="goods__item-title">Моноподы для селфи</h3>
+              <h3 class="goods__item-title">Моноподы<br> для селфи</h3>
             </a>
           </li>
           <li class="goods__item">
@@ -232,11 +228,11 @@
         </ul>
       </section>
 
-      <section class="services slider columns">
+      <section class="services columns slider">
         <h2 class="visually-hidden">Услуги</h2>
-        <input type="radio" id="services-btn-1" name="toggle" checked>
-        <input type="radio" id="services-btn-2" name="toggle">
-        <input type="radio" id="services-btn-3" name="toggle">
+        <input type="radio" id="services-btn-1" name="services-toggle" checked>
+        <input type="radio" id="services-btn-2" name="services-toggle">
+        <input type="radio" id="services-btn-3" name="services-toggle">
         <div class="services__controls">
           <label class="button button--yellow" for="services-btn-1">Доставка</label>
           <label class="button button--yellow" for="services-btn-2">Гарантия</label>
