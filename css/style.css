@@ -50,7 +50,7 @@ body {
 	background-color: #ffffff;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -814,7 +814,7 @@ body {
 }
 
 .filters__title {
-  padding: 26px 0;
+  padding: 27px 0;
 	padding-left: 9999px;
 	margin: 0;
 	margin-left: -9999px;
@@ -845,7 +845,7 @@ body {
 
 .filters__section-title {
   padding: 12px 0;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 	width: 100%;
 
 	color: #000000;
@@ -922,6 +922,73 @@ body {
 	left: -30px;
 }
 
+.checkbox {
+	position: absolute;
+	left: -2px;
+	top: 7px;
+
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+
+	border: 2px solid #000000;
+	border-radius: 2px;
+}
+
+input[type="checkbox"]:checked ~ label .checkbox::before,
+input[type="checkbox"]:checked ~ label .checkbox::after {
+	content: "";
+	position: absolute;
+
+	height: 5px;
+	background-color: #000000;
+}
+
+input[type="checkbox"]:checked ~ label .checkbox::before {
+	top: 5px;
+	left: 5px;
+
+	width: 20px;
+
+	transform: rotate(-45deg);
+	border: 1px solid #ffffff;
+}
+
+input[type="checkbox"]:checked ~ label .checkbox::after {
+	top: 9px;
+	left: 2px;
+
+	width: 12px;
+
+	transform: rotate(45deg);
+}
+
+input[type="radio"] + label::before {
+	content: "";
+	position: absolute;
+	left: -2px;
+	top: 6px;
+
+	width: 15px;
+	height: 15px;
+
+	border: 5px solid #000000;
+	border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::after {
+	content: "";
+	position: absolute;
+	left: 6px;
+	top: 14px;
+
+	width: 9px;
+	height: 9px;
+
+	background-color: #000000;
+	border-radius: 50%;
+}
+
 .filters__options {
 	padding: 0;
   padding-bottom: 28px;
@@ -931,6 +998,8 @@ body {
 }
 
 .filters__option {
+	position: relative;
+
   padding-left: 38px;
 }
 
@@ -961,9 +1030,9 @@ body {
 }
 
 .sorting__title {
-  padding: 26px 0;
+  padding: 27px 0;
 	margin: 0;
-	margin-right: 60px;
+	margin-right: 63px;
 
 	color: #000000;
 	font-size: 16px;
@@ -983,8 +1052,55 @@ body {
 }
 
 .sorting__buttons {
+	position: relative;
+
 	margin: 0;
 	margin-left: auto;
+}
+
+.sorting__button {
+	position: absolute;
+	top: -5px;
+
+	width: 0;
+	height: 0;
+
+	border: 5px solid #000000;
+	opacity: 0.2;
+	outline: none;
+}
+
+.sorting__button--active {
+	opacity: 1;
+	pointer-events: none;
+}
+
+.sorting__button:hover,
+.sorting__button:focus,
+.sorting__button:active {
+	opacity: 0.4;
+}
+
+.sorting__button:active {
+	opacity: 1;
+}
+
+.arrow-up {
+	left: -40px;
+
+	border-top: none;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-width: 10px;
+}
+
+.arrow-down {
+	right: 1px;
+
+	border-bottom: none;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-width: 10px;
 }
 
 .sorting__option {

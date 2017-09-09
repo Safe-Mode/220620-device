@@ -110,24 +110,35 @@
             <legend class="filters__section-title">Цвет</legend>
             <ul class="filters__options">
               <li class="filters__option">
-                <label for="black">Чёрный</label>
                 <input class="filters__input filters__input--checkbox visually-hidden" id="black" type="checkbox" name="black" checked>
+                <label for="black">Чёрный</label>
+                <span class="checkbox"></span>
               </li>
               <li class="filters__option">
-                <label for="white">Белый</label>
                 <input class="filters__input filters__input--checkbox visually-hidden" id="white" type="checkbox" name="white">
+                <label for="white">Белый</label>
+                <span class="checkbox"></span>
               </li>
               <li class="filters__option">
-                <label for="blue">Синий</label>
                 <input class="filters__input filters__input--checkbox visually-hidden" id="blue" type="checkbox" name="blue" checked>
+                <label for="blue">
+                  <span class="checkbox"></span>
+                  Синий
+                </label>
               </li>
               <li class="filters__option">
-                <label for="red">Красный</label>
                 <input class="filters__input filters__input--checkbox visually-hidden" id="red" type="checkbox" name="red" checked>
+                <label for="red">
+                  <span class="checkbox"></span>
+                  Красный
+                </label>
               </li>
               <li class="filters__option">
-                <label for="pink">Розовый</label>
                 <input class="filters__input filters__input--checkbox visually-hidden" id="pink" type="checkbox" name="pink">
+                <label for="pink">
+                  <span class="checkbox"></span>
+                  Розовый
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -135,12 +146,12 @@
             <legend class="filters__section-title">Bluetooth</legend>
             <ul class="filters__options">
               <li class="filters__option">
-                <label for="bluetooth">Есть</label>
                 <input class="filters__input filters__input--radio visually-hidden" id="bluetooth" type="radio" name="product-group" value="bluetooth" checked>
+                <label for="bluetooth">Есть</label>
               </li>
               <li class="filters__option">
-                <label for="no-bluetooth">Нет</label>
                 <input class="filters__input filters__input--radio visually-hidden" id="no-bluetooth" type="radio" name="product-group" value="no-bluetooth">
+                <label for="no-bluetooth">Нет</label>
               </li>
             </ul>
           </fieldset>
@@ -163,8 +174,8 @@
             </li>
           </ul>
           <p class="sorting__buttons">
-            <a class="sorting__button" href="#">По возрастанию</a>
-            <a class="sorting__button">По убыванию</a>
+            <a class="sorting__button arrow-up" href="#"><span class="visually-hidden">По возрастанию</span></a>
+            <a class="sorting__button sorting__button--active arrow-down"><span class="visually-hidden">По убыванию</span></a>
           </p>
         </section>
 
