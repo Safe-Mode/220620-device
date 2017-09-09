@@ -270,6 +270,8 @@ body {
 }
 
 .main-nav__user-item {
+	position: relative;
+
 	margin-right: 40px;
 	padding-left: 22px;
 }
@@ -438,6 +440,32 @@ body {
   opacity: 0;
 }
 
+.slider__controls--preview {
+	position: absolute;
+	right: 70px;
+	bottom: 158px;
+	z-index: 100;
+	width: 90px;
+	height: 12px;
+}
+
+.slider__controls--preview label {
+	position: relative;
+
+	display: inline-block;
+	margin-right: 16px;
+	width: 10px;
+	height: 10px;
+
+	border: 1px solid #000000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider__controls--preview label:last-child {
+	margin-right: 0;
+}
+
 .slider__item {
 	position: absolute;
   top: 0;
@@ -526,6 +554,20 @@ body {
   visibility: visible;
 }
 
+#preview-btn-1:checked ~ .slider__controls label[for="preview-btn-1"]::before,
+#preview-btn-2:checked ~ .slider__controls label[for="preview-btn-2"]::before,
+#preview-btn-3:checked ~ .slider__controls label[for="preview-btn-3"]::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+
+  width: 4px;
+	height: 4px;
+	border: 1px solid #000000;
+	border-radius: 50%;
+}
+
 .goods__list {
 	flex-wrap: wrap;
   padding: 0;
@@ -580,7 +622,7 @@ body {
 	height: 390px;
 	margin-bottom: 92px;
 
-	background-color: #e5e5e5;
+	background-image: linear-gradient(transparent 100px, #e5e5e5 100px);
 }
 
 .services__controls {
@@ -590,13 +632,24 @@ body {
   width: 285px;
 }
 
+.services__controls::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 285px;
+
+	width: 7px;
+	height: 320px;
+
+	background-color: #000000;
+}
+
 .services__controls .button {
 	box-sizing: border-box;
 	width: 160px;
 	padding: 10px;
+	padding-left: 25px;
 	margin-bottom: 26px;
-
-	text-align: center;
 }
 
 .services__list {
@@ -641,6 +694,20 @@ body {
 
 #services-btn-3:checked ~ .services__list .services__item:nth-child(3) {
   visibility: visible;
+}
+
+#services-btn-1:checked ~ .services__controls label[for="services-btn-1"],
+#services-btn-2:checked ~ .services__controls label[for="services-btn-2"],
+#services-btn-3:checked ~ .services__controls label[for="services-btn-3"] {
+	width: 100%;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#services-btn-1:checked ~ .services__controls label[for="services-btn-1"]:before,
+#services-btn-2:checked ~ .services__controls label[for="services-btn-2"]:before,
+#services-btn-3:checked ~ .services__controls label[for="services-btn-3"]:before {
+	content: none;
 }
 
 .brands {
@@ -1169,7 +1236,7 @@ body {
 }
 
 .copyright {
-	background: img(../img/icons.svg#search);
+	background-image: url("../img/svg/logo-html.svg");
 }
 
 .page-footer .columns--last::before {
@@ -1228,4 +1295,13 @@ body {
 
 .main-nav__user-item a.logout {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+
+.search-icon {
+	position: absolute;
+	top: 50%;
+	left: 3px;
+
+	transform: translateY(-50%);
 }

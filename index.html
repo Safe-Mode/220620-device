@@ -16,6 +16,9 @@
         <ul class="main-nav__user-nav">
           <li class="main-nav__user-item main-nav__user-item--search">
             <form class="main-nav__user-search" action="get">
+              <svg class="search-icon" width="16" height="16">
+                <use xlink:href="img/icons.svg#search"></use>
+              </svg>
               <input class="main-nav__search-input" type="search" placeholder="Поиск по сайту">
               <input class="button button--search" type="submit" value="Найти">
             </form>
@@ -87,7 +90,7 @@
       <input type="radio" id="preview-btn-1" name="preview-toggle">
       <input type="radio" id="preview-btn-2" name="preview-toggle">
       <input type="radio" id="preview-btn-3" name="preview-toggle" checked>
-      <div class="slider__controls">
+      <div class="slider__controls slider__controls--preview">
         <label for="preview-btn-1"></label>
         <label for="preview-btn-2"></label>
         <label for="preview-btn-3"></label>
