@@ -15,7 +15,7 @@
       <div class="columns">
         <ul class="main-nav__user-nav">
           <li class="main-nav__user-item main-nav__user-item--search">
-            <form action="get">
+            <form class="main-nav__user-search" action="get">
               <input class="main-nav__search-input" type="search" placeholder="Поиск по сайту">
               <button class="button button--search" type="submit">Найти</button>
             </form>
@@ -97,10 +97,13 @@
           <fieldset class="filters__section">
             <legend class="filters__section-title">Стоимость</legend>
             <div class="filters__range range">
-              <div class="range__base"></div>
-              <div class="range__handle"></div>
-              <div class="range__handle"></div>
-              <div class="range__fill"></div>
+              <div class="range__controls">
+                <div class="range__base">
+                  <div class="range__fill"></div>
+                </div>
+                <div class="range__handle range__handle--min"></div>
+                <div class="range__handle range__handle--max"></div>
+              </div>
             </div>
           </fieldset>
           <fieldset class="filters__section">

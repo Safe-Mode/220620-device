@@ -126,7 +126,7 @@ body {
 
 	background-color: #f7e296;
 	transform: translateY(-50%);
-	transition: 0.5s;
+	transition: height 0.5s;
 }
 
 .button--yellow:hover::before,
@@ -289,6 +289,14 @@ body {
 	padding-left: 25px;
 }
 
+.main-nav__user-item--login a {
+	margin-right: 16px;
+}
+
+.main-nav__user-item--login a:last-child {
+	margin-right: 0;
+}
+
 .main-nav__user-item a:hover,
 .main-nav__user-item a:focus,
 .main-nav__user-item a:active {
@@ -371,10 +379,6 @@ body {
 	letter-spacing: 0.1px;
 
 	list-style: none;
-}
-
-.main-nav__catalog-wrapper {
-
 }
 
 .page-title {
@@ -700,7 +704,7 @@ body {
 #services-btn-2:checked ~ .services__controls label[for="services-btn-2"],
 #services-btn-3:checked ~ .services__controls label[for="services-btn-3"] {
 	width: 100%;
-	color: #ffffff;
+	color: #f7e296;
 	background-color: #000000;
 }
 
@@ -842,6 +846,7 @@ body {
 .filters__section-title {
   padding: 12px 0;
   padding-bottom: 25px;
+	width: 100%;
 
 	color: #000000;
 	font-size: 18px;
@@ -850,6 +855,71 @@ body {
 	font-weight: 800;
 
   border-top: 2px solid #000000;
+}
+
+.range {
+	position: relative;
+
+	padding-top: 14px;
+	padding-bottom: 29px;
+  height: 40px;
+}
+
+.range__base {
+	height: 2px;
+  background: #d7dcde;
+}
+
+.range__fill {
+	width: 60%;
+  height: 2px;
+  background: #91c92f;
+}
+
+.range__handle {
+	position: absolute;
+  top: 4px;
+  left: 0px;
+
+  width: 4px;
+  height: 4px;
+
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+	transform: translate(-50%);
+}
+
+.range__handle--max {
+	left: 60%;
+}
+
+.range__handle--min::after,
+.range__handle--max::after {
+	position: absolute;
+	top: 13px;
+
+	display: inline-block;
+	width: 70px;
+
+	font-size: 14px;
+	line-height: 22px;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+
+	opacity: 0.2;
+}
+
+.range__handle--min::after {
+	content: "от 0";
+	left: 0;
+}
+
+.range__handle--max::after {
+	content: "до 5000";
+	left: -30px;
 }
 
 .filters__options {
@@ -866,10 +936,6 @@ body {
 
 .filters__option label {
   cursor: pointer;
-}
-
-.filters__range {
-  height: 83px;
 }
 
 .catalog-wrapper {
