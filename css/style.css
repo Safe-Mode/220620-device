@@ -271,14 +271,20 @@ body {
 
 .main-nav__user-item {
 	margin-right: 40px;
+	padding-left: 22px;
 }
 
 .main-nav__user-item:last-child {
 	margin-right: 0;
 }
 
+.main-nav__user-item--search {
+	padding-left: 0;
+}
+
 .main-nav__user-item--login {
 	margin-right: auto;
+	padding-left: 25px;
 }
 
 .main-nav__user-item a:hover,
@@ -666,14 +672,14 @@ body {
 }
 
 .about-us {
-	padding: 51px 0;
-  width: 460px;
+	padding: 50px 0;
+  width: 475px;
 
   letter-spacing: 0;
 }
 
 .contacts {
-	padding: 51px 0;
+	padding: 50px 0;
   width: 560px;
 
   letter-spacing: 0;
@@ -698,6 +704,10 @@ body {
 	margin-bottom: 30px;
 }
 
+.about-us__desc:last-of-type {
+	margin-bottom: 65px;
+}
+
 .contacts__desc {
 	margin: 0;
 	margin-bottom: 40px;
@@ -705,14 +715,14 @@ body {
 
 .contacts__map {
 	display: block;
-	margin-bottom: 50px;
+	margin-bottom: 56px;
 }
 
 .about-us__delivery-list {
 	padding: 0;
 	padding-left: 35px;
 	margin: 0;
-	margin-bottom: 55px;
+	margin-bottom: 52px;
 
 	color: #000000;
 	font-size: 16px;
@@ -1112,6 +1122,10 @@ body {
   margin: 0;
 }
 
+.main-nav__user-nav--footer .main-nav__user-item--login {
+	padding-left: 60px;
+}
+
 .main-nav__user-item--footer a,
 .main-nav__user-item--footer a,
 .main-nav__user-item--footer a {
@@ -1122,6 +1136,14 @@ body {
 .main-nav__user-item--footer a:focus,
 .main-nav__user-item--footer a:active {
   opacity: 1;
+}
+
+.main-nav__site-nav--footer {
+	width: 460px;
+}
+
+.main-nav__item--footer {
+	margin-right: 30px;
 }
 
 .main-nav__item--footer a:hover,
@@ -1144,6 +1166,10 @@ body {
   margin: 0;
 
 	list-style: none;
+}
+
+.copyright {
+	background: img(../img/icons.svg#search);
 }
 
 .page-footer .columns--last::before {
