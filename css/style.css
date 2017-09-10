@@ -453,10 +453,12 @@ body {
 }
 
 .slider__controls--preview {
+	counter-reset: myCounter;
 	position: absolute;
 	right: 70px;
 	bottom: 158px;
 	z-index: 100;
+
 	width: 90px;
 	height: 12px;
 }
@@ -503,6 +505,8 @@ body {
 }
 
 .slider__item-title {
+	position: relative;
+
   margin: 0;
   margin-bottom: 20px;
 
@@ -511,6 +515,34 @@ body {
 	font-weight: 800;
 	line-height: 54px;
 	font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.slider__item-title::before {
+	content: "";
+	position: absolute;
+	top: -45px;
+	left: 0;
+
+	width: 100px;
+	height: 7px;
+
+	background-color: #ffffff;
+}
+
+.slider__item-title::after {
+	counter-increment: myCounter;
+	content: "0"counter(myCounter);
+	position: absolute;
+	top: -95px;
+	right: -3px;
+	z-index: -1;
+
+	color: #ffffff;
+	font-size: 180px;
+	line-height: 180px;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	letter-spacing: 0.01em;
 }
 
 .slider__item-desc {
