@@ -16,7 +16,7 @@
         <ul class="main-nav__user-nav">
           <li class="main-nav__user-item main-nav__user-item--search">
             <form class="main-nav__user-search" action="get">
-              <svg class="search-icon" width="16" height="16">
+              <svg class="icon icon--search" width="16" height="16">
                 <use xlink:href="img/icons.svg#search"></use>
               </svg>
               <input class="main-nav__search-input" type="search" placeholder="Поиск по сайту">
@@ -26,20 +26,40 @@
         </ul>
         <ul class="main-nav__user-nav">
           <li class="main-nav__user-item main-nav__user-item--login">
-            <a href="#">Войти</a>
+            <a href="#">
+              <svg class="icon icon--user" width="13" height="12">
+                <use xlink:href="img/icons.svg#user"></use>
+              </svg>
+              Войти
+            </a>
           </li>
           <li class="main-nav__user-item">
-            <a href="#">Сравнить</a>
+            <a href="#">
+              <svg class="icon icon--compare" width="10" height="10">
+                <use xlink:href="img/icons.svg#compare"></use>
+              </svg>
+              Сравнить
+            </a>
           </li>
           <li class="main-nav__user-item">
-            <a href="#">Корзина</a>
+            <a href="#">
+              <svg class="icon icon--cart" width="12" height="12">
+                <use xlink:href="img/icons.svg#cart"></use>
+              </svg>
+              Корзина
+            </a>
           </li>
         </ul>
       </div>
       <div class="columns">
         <ul class="main-nav__site-nav">
-          <li class="main-nav__item">
-            <a>Каталог товаров</a>
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__item-link">
+              Каталог товаров
+              <svg class="icon icon--plus" width="16" height="16">
+                <use xlink:href="img/icons.svg#plus"></use>
+              </svg>
+            </a>
             <div class="main-nav__item-wrapper">
               <div class="columns">
                 <ul class="main-nav__catalog">
@@ -244,15 +264,25 @@
       <ul class="services__list">
         <li class="services__item">
           <h3 class="services__item-title">Доставка</h3>
-          <p class="services__item-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="services__item-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+          </p>
+          <svg class="icon icon--delivery" width="136" height="164">
+            <use xlink:href="img/icons.svg#delivery"></use>
+          </svg>
         </li>
         <li class="services__item">
           <h3 class="services__item-title">Гарантия</h3>
-          <p class="services__item-desc">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <p class="services__item-desc">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
+          <svg class="icon icon--delivery" width="171" height="194">
+            <use xlink:href="img/icons.svg#warranty"></use>
+          </svg>
         </li>
         <li class="services__item">
           <h3 class="services__item-title">Кредит</h3>
           <p class="services__item-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <svg class="icon icon--delivery" width="156" height="186">
+            <use xlink:href="img/icons.svg#credit"></use>
+          </svg>
         </li>
       </ul>
     </section>
@@ -312,13 +342,28 @@
         </p>
         <ul class="main-nav__user-nav main-nav__user-nav--footer">
           <li class="main-nav__user-item main-nav__user-item--footer main-nav__user-item--login">
-            <a href="#">Войти</a>
+            <a href="#">
+              <svg class="icon icon--user" width="13" height="12">
+                <use xlink:href="img/icons.svg#user"></use>
+              </svg>
+              Войти
+            </a>
           </li>
           <li class="main-nav__user-item main-nav__user-item--footer">
-            <a href="#">Сравнить</a>
+            <a href="#">
+              <svg class="icon icon--compare" width="10" height="10">
+                <use xlink:href="img/icons.svg#compare"></use>
+              </svg>
+              Сравнить
+            </a>
           </li>
           <li class="main-nav__user-item main-nav__user-item--footer">
-            <a href="#">Корзина</a>
+            <a href="#">
+              <svg class="icon icon--cart" width="12" height="12">
+                <use xlink:href="img/icons.svg#cart"></use>
+              </svg>
+              Корзина
+            </a>
           </li>
         </ul>
       </nav>
@@ -343,12 +388,38 @@
 
       <div class="columns columns--last">
         <ul class="social">
-          <li><a class="social__link social__link--fb" href="#">Фейсбук</a></li>
-          <li><a class="social__link social__link--inst" href="#">Инстаграм</a></li>
-          <li><a class="social__link social__link--tw" href="#">Твиттер</a></li>
+          <li>
+            <a class="social__link social__link--fb" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="icon icon--academy" width="34" height="34">
+                <use xlink:href="img/icons.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__link social__link--inst" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="icon icon--academy" width="34" height="34">
+                <use xlink:href="img/icons.svg#insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__link social__link--tw" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <svg class="icon icon--academy" width="34" height="34">
+                <use xlink:href="img/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
         <p class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg class="icon icon--academy" width="27" height="35">
+              <use xlink:href="img/icons.svg#logo-html"></use>
+            </svg>
+          </a>
         </p>
       </div>
     </div>
