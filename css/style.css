@@ -973,30 +973,25 @@ body {
 	left: 60%;
 }
 
-.range__handle--min::after,
-.range__handle--max::after {
-	position: absolute;
-	top: 13px;
-
-	display: inline-block;
-	width: 70px;
-
-	font-size: 14px;
-	line-height: 22px;
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-weight: 300;
-
-	opacity: 0.2;
+.price__controls label,
+.price__controls input {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 22.27px;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, .2);
+  border: 0;
+  background-color: transparent;
 }
 
-.range__handle--min::after {
-	content: "от 0";
-	left: 0;
+.price__controls input {
+  width: 67px;
 }
 
-.range__handle--max::after {
-	content: "до 5000";
-	left: -30px;
+.range__handle:active{
+  width: 6px;
+  height: 6px;
 }
 
 .checkbox {
