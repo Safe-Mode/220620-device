@@ -437,8 +437,8 @@ body {
 }
 
 .preview__item {
-	padding: 0 50px;
-  padding-left: 00px;
+	padding: 0 45px;
+  padding-left: 0px;
   margin-bottom: 105px;
 }
 
@@ -500,7 +500,7 @@ body {
 }
 
 .slider__item-wrapper {
-  width: 510px;
+  width: 515px;
   padding-top: 80px;
 }
 
@@ -534,7 +534,7 @@ body {
 	content: "0"counter(myCounter);
 	position: absolute;
 	top: -95px;
-	right: -3px;
+	right: 0;
 	z-index: -1;
 
 	color: #ffffff;
