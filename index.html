@@ -331,7 +331,7 @@
         <a href="#" class="contacts__map">
           <img src="img/map.jpg" width="560" height="222" alt="Как проехать">
         </a>
-        <a class="button button--yellow" href="#">Напишите нам</a>
+        <a class="button button--yellow contacts__button" href="#">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -433,7 +433,7 @@
       <div class="columns">
         <p class="modal__form-field">
           <label class="modal__form-label" for="name">Ваше имя:</label>
-          <input class="modal__form-input" type="text" id="name" placeholder="Представьтесь, пожалуйста" required>
+          <input class="modal__form-input" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
         </p>
         <p class="modal__form-field">
           <label class="modal__form-label" for="email">Ваш email:</label>
@@ -442,7 +442,7 @@
       </div>
       <p class="modal__form-field modal__form-field--full">
         <label class="modal__form-label" for="message">Текст письма:</label>
-        <textarea class="modal__form-input modal__form-input--textarea" id="message" placeholder="В свободной форме" required></textarea>
+        <textarea class="modal__form-input modal__form-input--textarea" id="message" name="comment" placeholder="В свободной форме" required></textarea>
       </p>
       <button class="button button--yellow modal__form-submit" type="submit">Отправить</button>
     </form>
