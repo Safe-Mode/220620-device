@@ -1581,8 +1581,16 @@ input[type="radio"]:checked + label::after {
 	display: block;
 }
 
+.modal--animation {
+	animation: bounce 0.6s;
+}
+
+.modal--error {
+  animation: shake 0.6s;
+}
+
 .modal__contact {
-	top: 50%;
+	top: 10%;
 	left: 50%;
 	z-index: 1000;
 
@@ -1593,7 +1601,6 @@ input[type="radio"]:checked + label::after {
 
 	background-color: #ffffff;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-	transform: translateY(-50%);
 }
 
 .modal__form-field {
@@ -1707,7 +1714,7 @@ input[type="radio"]:checked + label::after {
 
 /*Карта*/
 .modal__map {
-	top: 50%;
+	top: 10%;
 	left: 50%;
 	z-index: 1000;
 
@@ -1725,4 +1732,45 @@ input[type="radio"]:checked + label::after {
 	z-index: 500;
 
 	background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*Анимации*/
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
