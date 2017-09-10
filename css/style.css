@@ -447,7 +447,7 @@ body {
 	z-index: 10;
 }
 
-.slider input[type=radio] {
+.slider input[type="radio"] {
 	position: absolute;
   opacity: 0;
 }
@@ -639,6 +639,10 @@ body {
 .goods__item-pic svg,
 .goods__item-pic img {
   margin: auto;
+}
+
+.goods__item:nth-child(2) svg {
+	margin-top: 40px;
 }
 
 .goods__item:hover .goods__item-pic,
