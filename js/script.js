@@ -13,7 +13,7 @@ var storage = localStorage.getItem("name");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal--show");
+  popup.classList.add("modal--show-anim");
   overlay.classList.add("modal--show");
 
   if (storage) {
@@ -26,14 +26,14 @@ link.addEventListener("click", function (evt) {
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.remove("modal--show");
+  popup.classList.remove("modal--show-anim");
   overlay.classList.remove("modal--show");
   popup.classList.remove("modal--error");
 });
 
 overlay.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.remove("modal--show");
+  popup.classList.remove("modal--show-anim");
   overlay.classList.remove("modal--show");
   popup.classList.remove("modal--error");
 });
@@ -51,8 +51,8 @@ form.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (popup.classList.contains("modal--show")) {
-      popup.classList.remove("modal--show");
+    if (popup.classList.contains("modal--show-anim")) {
+      popup.classList.remove("modal--show-anim");
       overlay.classList.remove("modal--show");
       popup.classList.remove("modal--error");
     }
@@ -67,20 +67,20 @@ var mapLink = document.querySelector(".contacts__map");
 
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mapPopup.classList.add("modal--show");
+    mapPopup.classList.add("modal--show-anim");
     overlay.classList.add("modal--show");
   });
 
   mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mapPopup.classList.remove("modal--show");
+    mapPopup.classList.remove("modal--show-anim");
     overlay.classList.remove("modal--show");
   });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("modal--show")) {
-        mapPopup.classList.remove("modal--show");
+      if (mapPopup.classList.contains("modal--show-anim")) {
+        mapPopup.classList.remove("modal--show-anim");
         overlay.classList.remove("modal--show");
       }
     }
@@ -88,6 +88,6 @@ var mapLink = document.querySelector(".contacts__map");
 
   overlay.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mapPopup.classList.remove("modal--show");
+    mapPopup.classList.remove("modal--show-anim");
     overlay.classList.remove("modal--show");
   });
