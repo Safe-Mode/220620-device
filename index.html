@@ -427,32 +427,40 @@
     </div>
   </footer>
 
-  <section class="modal modal--feedback">
+  <section class="modal modal__contact">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="modal__form" action="post">
-      <p>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Представьтесь, пожалуйста" required>
-      </p>
-      <p>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Ваш e-mail">
-      </p>
-      <p>
-        <label for="message">Текст письма:</label>
-        <textarea id="message" placeholder="В свободной форме" required></textarea>
+      <div class="columns">
+        <p class="modal__form-field">
+          <label class="modal__form-label" for="name">Ваше имя:</label>
+          <input class="modal__form-input" type="text" id="name" placeholder="Представьтесь, пожалуйста" required>
+        </p>
+        <p class="modal__form-field">
+          <label class="modal__form-label" for="email">Ваш email:</label>
+          <input class="modal__form-input" type="email" id="email" placeholder="Ваш e-mail">
+        </p>
+      </div>
+      <p class="modal__form-field modal__form-field--full">
+        <label class="modal__form-label" for="message">Текст письма:</label>
+        <textarea class="modal__form-input modal__form-input--textarea" id="message" placeholder="В свободной форме" required></textarea>
       </p>
       <button class="button button--yellow modal__form-submit" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="button modal__close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 
-  <section class="modal modal--map">
+  <section class="modal modal__map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <p>
       <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </p>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="button modal__close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
+
+  <div class="modal modal__overlay"></div>
 </body>
 </html>
