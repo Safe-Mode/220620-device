@@ -1868,7 +1868,7 @@ input[type="radio"]:focus + label:after,
   right: 0;
   z-index: 500;
 
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .modal__shadow {
