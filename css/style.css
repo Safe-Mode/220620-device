@@ -1692,6 +1692,8 @@ input[type="radio"]:focus + label:after,
 /*Форма входа*/
 .modal {
   position: fixed;
+	z-index: 1000;
+
   display: none;
 }
 
@@ -1711,7 +1713,6 @@ input[type="radio"]:focus + label:after,
 .modal__contact {
   top: 10%;
   left: 50%;
-  z-index: 1000;
 
   margin-left: -480px;
   padding: 95px 100px;
@@ -1840,20 +1841,24 @@ input[type="radio"]:focus + label:after,
 .modal__map {
   top: 10%;
   left: 50%;
-  z-index: 1000;
 
   margin-left: -480px;
   width: 960px;
+
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .modal__map p {
 	margin: 0;
+	height: 559px;
 }
 
 .modal__map iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
+
+	border: none;
 }
 
 .modal__overlay {
@@ -1864,6 +1869,18 @@ input[type="radio"]:focus + label:after,
   z-index: 500;
 
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal__shadow {
+	top: calc(10% + 43px); /*Отступ формы от верха + отступ тени от верха формы*/
+  left: 50%;
+  z-index: 500;
+
+  margin-left: -480px;
+	width: 960px;
+	height: 430px;
+
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
 /*Анимации*/
