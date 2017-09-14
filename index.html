@@ -5,7 +5,7 @@
   <meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
   <meta content="telephone=no" name="format-detection">
   <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Девайс</title>
 </head>
 <body>
@@ -141,8 +141,8 @@
     </nav>
   </header>
 
-  <main class="container">
-    <div class="preview slider">
+  <main>
+    <div class="preview slider container">
       <input type="radio" id="preview-btn-1" name="preview-toggle" checked>
       <input type="radio" id="preview-btn-2" name="preview-toggle">
       <input type="radio" id="preview-btn-3" name="preview-toggle">
@@ -225,7 +225,7 @@
       </div>
     </div>
 
-    <section class="goods">
+    <section class="goods container">
       <h2 class="visually-hidden">Товары</h2>
       <ul class="goods__list columns">
         <li class="goods__item">
@@ -245,7 +245,7 @@
                 <use xlink:href="#popular-2"></use>
               </svg>
             </p>
-            <h3 class="goods__item-title">Моноподы для селфи</h3>
+            <h3 class="goods__item-title">Моноподы для&nbsp;селфи</h3>
           </a>
         </li>
         <li class="goods__item">
@@ -287,43 +287,45 @@
       </ul>
     </section>
 
-    <section class="services columns slider">
-      <h2 class="visually-hidden">Услуги</h2>
-      <input type="radio" id="services-btn-1" name="services-toggle" checked>
-      <input type="radio" id="services-btn-2" name="services-toggle">
-      <input type="radio" id="services-btn-3" name="services-toggle">
-      <div class="services__controls">
-        <label class="button button--yellow" for="services-btn-1">Доставка</label>
-        <label class="button button--yellow" for="services-btn-2">Гарантия</label>
-        <label class="button button--yellow" for="services-btn-3">Кредит</label>
+    <section class="services">
+      <div class="container columns slider">
+        <h2 class="visually-hidden">Услуги</h2>
+        <input type="radio" id="services-btn-1" name="services-toggle" checked>
+        <input type="radio" id="services-btn-2" name="services-toggle">
+        <input type="radio" id="services-btn-3" name="services-toggle">
+        <div class="services__controls">
+          <label class="button button--yellow" for="services-btn-1">Доставка</label>
+          <label class="button button--yellow" for="services-btn-2">Гарантия</label>
+          <label class="button button--yellow" for="services-btn-3">Кредит</label>
+        </div>
+        <ul class="services__list">
+          <li class="services__item">
+            <h3 class="services__item-title">Доставка</h3>
+            <p class="services__item-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+            <svg class="icon icon--delivery" width="136" height="164">
+              <use xlink:href="#delivery"></use>
+            </svg>
+          </li>
+          <li class="services__item">
+            <h3 class="services__item-title">Гарантия</h3>
+            <p class="services__item-desc">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
+            <svg class="icon icon--delivery" width="171" height="194">
+              <use xlink:href="#warranty"></use>
+            </svg>
+          </li>
+          <li class="services__item">
+            <h3 class="services__item-title">Кредит</h3>
+            <p class="services__item-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <svg class="icon icon--delivery" width="156" height="186">
+              <use xlink:href="#credit"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
-      <ul class="services__list">
-        <li class="services__item">
-          <h3 class="services__item-title">Доставка</h3>
-          <p class="services__item-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-          <svg class="icon icon--delivery" width="136" height="164">
-            <use xlink:href="#delivery"></use>
-          </svg>
-        </li>
-        <li class="services__item">
-          <h3 class="services__item-title">Гарантия</h3>
-          <p class="services__item-desc">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
-          <svg class="icon icon--delivery" width="171" height="194">
-            <use xlink:href="#warranty"></use>
-          </svg>
-        </li>
-        <li class="services__item">
-          <h3 class="services__item-title">Кредит</h3>
-          <p class="services__item-desc">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          <svg class="icon icon--delivery" width="156" height="186">
-            <use xlink:href="#credit"></use>
-          </svg>
-        </li>
-      </ul>
     </section>
 
-    <section class="brands">
+    <section class="brands container">
       <h2 class="visually-hidden">Наши брэнды</h2>
       <ul class="brands__list columns">
         <li class="brands__item">
@@ -345,7 +347,7 @@
       </ul>
     </section>
 
-    <div class="columns">
+    <div class="columns container">
       <section class="about-us">
         <h2 class="about-us__title">О нас</h2>
         <p class="about-us__desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
