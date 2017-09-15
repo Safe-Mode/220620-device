@@ -2,7 +2,7 @@
   font-family: "Open Sans";
   src: local("Open Sans Light"), local("OpenSans-Light"),
     url("../fonts/opensanslight.woff2") format("woff2"),
-  url("../fonts/opensanslight.woff") format("woff");
+    url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -38,7 +38,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1160px;
+  min-width: 1200px;
 
   font-size: 15px;
   line-height: 30px;
